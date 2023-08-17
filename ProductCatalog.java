@@ -8,24 +8,26 @@ public class ProductCatalog {
 
     int numberOfProducts;
 
-    public ProductCatalog(){
-        //this.products = new Product(maxNumberOfProducts);
+    public ProductCatalog() {
+        this.products = new Product(maxNumberOfProducts);
         this.numberOfProducts = 0;
     }
 
-    public void printProducts(){
-
+    public void printProducts() {
+        for (int i =0; i<numberOfProducts; i++){
+            System.out.println(products[i].name + " " + products[i].fats + " " + products[i].carbs + " " + products[i].proteins + " " + products[i].calories );
+        }
     }
 
-    public boolean addProduct(Product product){
+    public boolean addProduct(Product product) {
         return true;
     }
 
-    public Product getProductsByName(String name){
+    public Product getProductsByName(String name) {
         return null;
     }
 
-    public boolean deleteProduct(String name){
+    public boolean deleteProduct(String name) {
         return true;
     }
 }
