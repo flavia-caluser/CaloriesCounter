@@ -26,9 +26,8 @@ public class Product {
 
     public static double computerCalories(double fats, double carbs, double proteins) {
         double calories = 9 * fats + 4 * (carbs + proteins);
-        this.calories = calories;
         return calories;
     }
 }
 
-}
+
