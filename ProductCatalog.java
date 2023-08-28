@@ -2,7 +2,7 @@ package OOP.ex3;
 
 public class ProductCatalog {
 
-    Product[] products;
+    static Product[] products;
 
     static final int maxNumberOfProducts = 100;
 
